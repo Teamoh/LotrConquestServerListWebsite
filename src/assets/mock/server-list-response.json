@@ -1,0 +1,58 @@
+{
+    "IsLoading": false,
+    "Servers": [
+        [
+            {
+                "Id": "12ce1e8cf21e707cc323909b1cb507fb",
+                "Level": "rivendell",
+                "Mode": "tdm",
+                "Name": "CNQReboot TDM",
+                "Players": 0,
+                "Slots": 16
+            },
+            {
+                "Id": "e1b072c51b3bc8965d506f457bf6543a",
+                "Level": "pelennor_fields",
+                "Mode": "cnq",
+                "Name": "CNQReboot Mixed",
+                "Players": 0,
+                "Slots": 16
+            },
+            {
+                "Id": "830e9d3464cf9e4da78188d996609898",
+                "Level": "rivendell",
+                "Mode": "tdm",
+                "Name": "CNQReboot Duelling",
+                "Players": 0,
+                "Slots": 8
+            },
+            {
+                "Id": "112d47095a911a9f964bda670811e57a",
+                "Level": "osgiliath",
+                "Mode": "tdm",
+                "Name": "CNQReboot 1 vs 1",
+                "Players": 2,
+                "Slots": 2
+            }
+        ],
+        [
+            {
+                "Id": "ada376efee196b9d4feb4d534525412c",
+                "Level": "mount_doom",
+                "Mode": "ctr",
+                "Name": "Middle-Earth Fun | Mixed | 2020",
+                "Players": 0,
+                "Slots": 16
+            },
+            {
+                "Id": "876c7c2c2fe964ad8125a81c2204dd2f",
+                "Level": "osgiliath",
+                "Mode": "tdm",
+                "Name": "Middle-Earth Fun | 1 vs 1 | 2020",
+                "Players": 0,
+                "Slots": 2
+            }
+        ]
+    ],
+    "Timestamp": 1608733455652
+}
