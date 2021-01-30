@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Ringbearer';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ringbearer Medium'), url('../assets//fonts/Ringbearer/ringbearer.woff') format('woff');
+}
+
+@keyframes loading-spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {    
+        transform: rotate(360deg);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url(../assets/images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ringbearer', sans-serif;
+}
+
+.wrapper {
+    max-width: 900px;
+    padding: 0 0.5rem;
+    margin: 5vh auto;
+}
+
+.wrapper__header {
+    padding: 0 0 1.5rem;
+}
+
+.wrapper__footer {
+    padding: 1.5rem 0 0;
+}
+
+.header-logos__logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.header-logos__logo--lotrc {
+    max-width: 200px;
+}
+
+.server-list {
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.server-list__links {
+    display: block;
+    margin: 0 0 1em;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.server-list__links a {
+    color: #fff;
+    transition: color 0.2s linear;
+}
+
+.server-list__links a:hover,
+.server-list__links a:focus {
+    color: #e1be00;
+}
+
+.server-list__headline {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.server-list__body {
+    margin: 1rem 0 0;
+}
+
+.server-list__loading,
+.server-list__error,
+.server-list__timestamp,
+.server-list__no-servers-found {
+    text-align: center;
+}
+
+.server-list__timestamp {
+    margin: 0 0 1em;
+}
+
+.server-list__loading-spinner {
+    margin: 0.5em 0 0;
+    text-align: center;
+}
+
+.server-list__loading-spinner::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #fff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: loading-spinner 2s linear infinite;
+}
+
+.server-list__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.server-list__table-head {
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.server-list__table-th,
+.server-list__table-td {
+    padding: 0.6rem 0.5rem;
+}
+
+.server-list__table-th--name,
+.server-list__table-td--name {
+    width: 40%;
+}
+
+.server-list__table-td--break-word {
+    word-break: break-word;
+}
+
+.server-list__table-body .server-list__table-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.server-list__table-th:not(:last-child),
+.server-list__table-td:not(:last-child){
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.server-list__table-td:not(.server-list__table-td--nr) {
+    font-size: 0.9em;
+}
+
+.server-list__table-td--nr {
+    font-size: 1.1em;
+}
+
+.server-list__btn-container {
+    margin: 1rem 0 0;
+    text-align: center;
+}
+
+.server-list__btn {
+    display: inline-block;
+    padding: 0.7em 1em 0.5em;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: inherit;
+    line-height: 1;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+}
+
+.server-list__btn:hover {
+    background-color: #ddd; 
+}
+
+.server-list__btn:focus {
+    outline: 0;
+}
+
+.footer-logos {
+    padding: 1rem 0 0;
+    text-align: center;
+}
+
+.footer-logos__link {
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer-logos__logo--radmin {
+    max-width: 50px;
+}
+
+.small-print {
+    padding: 0 1.5rem;
+    font-size: 0.65em;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.small-print small {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 500px) {
+    .server-list {
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .server-list__table {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+
+    #wrapper {
+        margin: 10vh auto;
+    }
+
+    .header-logos__logo--lotrc {
+        max-width: 300px;
+    }
+
+    .small-print {
+        font-size: 0.6em;
+    }
+}
