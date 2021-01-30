@@ -1,6 +1,6 @@
 # LotrConquestServerListWebsite
 
-Vue.js based website frontend for LotrConquestServerListService
+Vue.js based website frontend for [LotrConquestServerListService](https://github.com/Teamoh/LotrConquestServerListService)
 
 ## Screenshot
 
